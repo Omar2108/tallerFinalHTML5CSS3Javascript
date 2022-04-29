@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link href="https://www.flaticon.es/uicons">
+    <link rel="stylesheet" type="text/css" href="/portafolio/css/main.css">
+
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="tituloh">
+            <h1>Omar Rodriguez Chamorro</h1>
+            <h2>Desarrollador Full Stack</h2>
+        </div>
+        <div class="menu">
+            <nav>
+                <div class="btnMenu">
+                    <a href="./proyectos.html">Volver</a>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <article>
+        <section class="habilidades">
+            <h1>Taller Java Condicionales</h1>
+            <h2 class="hab1">Punto 4</h2>
+            <h2 class="hab1">Enunciado del ejercicio</h2>
+            <div class="enun">
+                <p class="parra">La video tienda que presta sus servicios de alquiler de películas a los usuarios del barrio el Porvenir, requiere de una aplicación que permita registrar el alquiler de las películas que adquieren sus usuarios. Para cada usuario se debe permitir la opción de alquilar película, consultar películas disponibles y recibir película en la video tienda con la opción de realizar anotaciones sobre estas si se llegan a presentar daños u otra novedad sobre la película.</p>              
+            </div>
+            <h3>Codigo de la Clase</h3>
+            <div class="codigo">
+                <pre>
+                    <code>
+                        package com.tallerjava.taller2;
+
+                        import java.io.IOException;
+                        import java.util.Scanner;
+
+
+                        public class punto4 {
+                            private String pelicula;
+                            private String pelicula1;
+                            private String pelicula2;
+                            private  String pelicula3;
+                            private String fecha;
+                            private String devolverPelicula;
+                            private  int Opcion;
+                            private String Observaciones;
+                            
+                            public static void punto4() throws IOException{
+                                //Mostrar menu
+                                menu();
+                                //capturar la opcion del usuario
+                                int opcion = capturarOpcion();
+                                //evaluar y ejecutar la opcion del usuario
+                                evaluarOpcion(opcion);       
+                            }
+                            
+                            //crear un metodo para mostrar el menu de opciones 
+                            private static void menu(){
+                                System.out.println("Ingrese un numero de acuerdo a la operacion que desea realizar");
+                                System.out.println("1. consultar peliculas disponibles");
+                                System.out.println("2. alquilar peliculas");
+                                System.out.println("3. recibir peliculas");
+                                System.out.println("4. observaciones");
+                            }
+                            //crear un metodo para capturar la opcion elegida por el usuario
+                            private static int capturarOpcion(){
+                                Scanner input = new Scanner(System.in);
+                                return input.nextInt();
+                            }
+                            //crear un metodo para capturar un String
+                            private static String capturarString(){
+                                Scanner input = new Scanner(System.in);
+                                return input.nextLine();
+                            }
+                            //crear un metodo para evaluar la opcion ingresada por el usuario
+                            private static int evaluarOpcion(int opcion) throws IOException{
+                                        
+                                String pelicula1 = "encanto";
+                                String pelicula2 = "mi probre angelito";
+                                String pelicula3 = "Rambo";
+                            
+                                switch(opcion){
+                                    case 1 -> {
+                                        System.out.println("Estas son el listado de peliculas disponibles");
+                                        System.out.println(pelicula1);
+                                        System.out.println(pelicula2);
+                                        System.out.println(pelicula3);
+                                        break;
+                                    }
+                                    case 2 -> {
+                                        System.out.println("Eliga la pelicula que desea alquilar");
+                                        System.out.println(pelicula1);
+                                        System.out.println(pelicula2);
+                                        System.out.println(pelicula3);
+                                        String pelicula;
+                                        pelicula = capturarString();
+                                        System.out.println("Alquilo la siguiente pelicula, "+pelicula+" Muchas gracias por visitarnos");
+                                        break;
+                                
+                                    }
+                                    case 3 -> {
+                                        System.out.println("Fecha de entrega de la peliculas");
+                                        String fecha;
+                                        fecha = capturarString();
+                                        String devolverPelicula;
+                                        System.out.println("Fecha que se debe devolver la pelicula");
+                                        devolverPelicula = capturarString();
+                                        fecha = capturarString();
+                                        String observaciones;
+                                        System.out.println("Tiene observaciones con respeto a la entregue de la pelicula");
+                                        observaciones = capturarString();
+                                        System.out.println("Muchas gracias por visitarnos, la pelicula se entrega con la siguinetes condiciones: "
+                                        +observaciones+"se entrego en la fecha de "+fecha);
+                                        break;
+                                    }
+                                    case 4 -> {
+                                        System.out.println("Tiene observaciones adcionales");
+                                        String observaciones;
+                                        observaciones = capturarString();
+                                        System.out.println(observaciones);
+                                        break;
+                                    }
+                                    default -> {
+                                        System.out.println("Opción incorrecta");
+                                        System.in.read();            
+                                    }
+
+                                        
+                                }
+                                return 0;
+                            }
+                        }//FIN DE LA CLASE
+
+                        
+
+                    </code>
+                </pre>
+            </div>
+            
+        </section>
+    </article>
+    <div class="piePagina">
+        <footer>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/correo.png" alt="">
+                omar.rodriguez2108@hotmail.com</p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/correo.png" alt=""> omar.rchamorro21@gmail.com
+            </p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/telefono-inteligente.png" alt=""> 300 277 98 1
+            </p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/whatsapp.png" alt=""> 300 277 98 1</p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/github.png" alt=""><a class="pie"
+                    href="https://github.com/Omar2108">https://github.com/Omar2108</a></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

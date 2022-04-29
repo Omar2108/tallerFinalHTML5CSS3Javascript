@@ -1,0 +1,84 @@
+body{
+	width: 700px;
+	margin:0px auto;
+	background: #2291df;
+}
+
+main{
+	background: #5aba47;
+	margin: 20px;
+	width: 600px;
+	height: 700px;
+	border: rgb(166, 39, 39) 1px solid;
+}
+
+
+
+.titulo{
+	text-align: center;
+	margin: 20px;
+	padding: 7px;
+	height: 40px;
+	justify-content: center;
+}
+
+h1{
+	text-align: center;
+	font-family: Copperplate Gothic Bold;
+}
+
+.formulario{
+	border: rgb(179, 33, 33) 1px solid;
+	margin: 10px;
+	padding: 10px;
+	height: 550px;
+}
+
+form{
+	justify-content: center;
+	margin: 10px;
+	padding: 10px;
+}
+
+label{
+	margin: 10px;
+	font-family: Copperplate Gothic Bold;
+	font-size: 20px;
+}
+
+input{
+	margin: 10px;
+	padding: 2px;
+	width: 100%;
+	height: 20px;
+}
+
+textarea{
+	padding: 3px;
+	margin: 10px;
+	width: 100%;
+	height: 200px;
+
+}
+
+.btn{
+	width: 100%;
+	height: 30px;
+	margin: 0px;
+	border-radius: 10px;
+	
+}
+
+.boton{
+	background: #36e67c;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	font-size: 20px;
+	font-family: monospace;
+}
+
+.boton:hover{
+	color: red;
+	cursor: pointer;
+}

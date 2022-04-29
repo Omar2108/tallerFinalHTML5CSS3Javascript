@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link href="https://www.flaticon.es/uicons">
+    <link rel="stylesheet" type="text/css" href="/portafolio/css/main.css">
+
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="tituloh">
+            <h1>Omar Rodriguez Chamorro</h1>
+            <h2>Desarrollador Full Stack</h2>
+        </div>
+        <div class="menu">
+            <nav>
+                <div class="btnMenu">
+                    <a href="./proyectos.html">Volver</a>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <article>
+        <section class="habilidades">
+            <h1>Taller PSeInt Ciclos</h1>
+            <h2 class="hab1">Punto 3</h2>
+            <h2 class="hab1">Enunciado del ejercicio</h2>
+            <div class="enun">
+                <p class="parra">Realizar la siguiente figura por medio del ciclo Repetir - Hasta Que</p>
+                <img class="figura" src="/portafolio/img/figura3.png">
+                
+            </div>
+            <h3>Solucion: </h3>
+            <div class="codigo">
+                <pre>
+                <code>
+                    Proceso miAppCiclos3
+                        Definir a,b,c,d,i,j,k,n, asterisco, espacios Como Entero;
+                        Definir final1 Como Entero;
+                        Definir final2 Como Entero;
+                        Definir final3 Como Entero;
+                        Definir control Como Logico;
+                        control <-Verdadero;
+                        asterisco <- 1;
+                        espacios <- 1;
+                        n <- 10;
+                        a <- 0;
+                        i <- 0;
+                        b <- 0;
+                        final1 <- n +(n/2);
+                        final2 <- (2*a)-1;
+                        final3 <- n -(n/2);
+                        
+                        Repetir
+                            Para a <- 0 Hasta n Con Paso 1 Hacer
+                                Para i<-n/2 Hasta a-4 Con Paso -1 Hacer
+                                    Escribir " " Sin Saltar;
+                                FinPara
+                                Para b <- 0 Hasta a*2  Con Paso 1 Hacer
+                                    Escribir "*" Sin Saltar;
+                                FinPara
+                                Escribir "";
+                                
+                            FinPara
+                            Para a <- 1 Hasta 4 Con Paso 1 Hacer
+                                Para i<-4/2 Hasta a-6 Con Paso -1 Hacer
+                                    Escribir " " Sin Saltar;
+                                FinPara
+                                Para b <- 0 Hasta a*2  Con Paso 1 Hacer
+                                    Escribir "*" Sin Saltar;
+                                FinPara
+                                Escribir "";
+                                
+                            FinPara
+                            control <- Falso;
+                        Hasta Que control = Falso
+                        
+
+                    FinProceso
+
+                </code>
+            </pre>
+            </div>
+            
+        </section>
+    </article>
+    <div class="piePagina">
+        <footer>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/correo.png" alt="">
+                omar.rodriguez2108@hotmail.com</p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/correo.png" alt=""> omar.rchamorro21@gmail.com
+            </p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/telefono-inteligente.png" alt=""> 300 277 98 1
+            </p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/whatsapp.png" alt=""> 300 277 98 1</p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/github.png" alt=""><a class="pie"
+                    href="https://github.com/Omar2108">https://github.com/Omar2108</a></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

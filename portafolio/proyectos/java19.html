@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link href="https://www.flaticon.es/uicons">
+    <link rel="stylesheet" type="text/css" href="/portafolio/css/main.css">
+
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="tituloh">
+            <h1>Omar Rodriguez Chamorro</h1>
+            <h2>Desarrollador Full Stack</h2>
+        </div>
+        <div class="menu">
+            <nav>
+                <div class="btnMenu">
+                    <a href="./proyectos.html">Volver</a>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <article>
+        <section class="habilidades">
+            <h1>Taller Java Ciclos</h1>
+            <h2 class="hab1">Punto 4</h2>
+            <h2 class="hab1">Enunciado del ejercicio</h2>
+            <div class="enun">
+                <p class="parra">Se requiere un programa que pueda crear la tabla de multiplicar del número que el usuario indique por medio del ciclo Para; esta debe ser impresa del 1 al 10. Ejemplo, si el usuario indica que desea crear la tabla del 5, entonces el resultado debería ser el siguiente:</p>
+                <img class="figura" src="/portafolio/img/figura4.png">
+                
+            </div>
+            <h3>Codigo de la Clase</h3>
+            <div class="codigo">
+                <pre>
+                    <code>
+                        package com.tallerjava.taller3;
+
+                        import java.util.Scanner;
+                        
+                        
+                        class punto4 {
+                            private int i;
+                            private int num;
+                        
+                            public static void punto4() {
+                                
+                                //muestro mensaje en pantalla solicitando un numero
+                                mensaje();
+                                
+                                //se captura el numero ingresado por el usuario
+                                int num = capturarNum();
+                                
+                                //se ejecuta el ciclo, creando la tabla de multiplicar del numero ingresado
+                                tablaMultiplicar(num);
+                                
+                            }
+                            
+                            //Crea mensaje para solicitar datos
+                            
+                            private static void mensaje(){
+                                System.out.println("Por favor ingrese un numero");
+                            }
+                            
+                            //se creata metodo para capturar el numero
+                            
+                            private static int capturarNum(){
+                                Scanner input = new Scanner(System.in);
+                                return input.nextInt();
+                            }
+                            
+                            private static void tablaMultiplicar(int num){
+                                     
+                                //se ejecuta el ciclo, creando la tabal de multiplicar del numero ingresado
+                                for(int i = 1; i <=10; i++){
+                                    System.out.println(i+" x "+num+" = "+i*num);
+                                }
+                                
+                               
+                            }
+                            
+                        }
+                        
+
+                    </code>
+                </pre>
+            </div>
+            
+        </section>
+    </article>
+    <div class="piePagina">
+        <footer>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/correo.png" alt="">
+                omar.rodriguez2108@hotmail.com</p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/correo.png" alt=""> omar.rchamorro21@gmail.com
+            </p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/telefono-inteligente.png" alt=""> 300 277 98 1
+            </p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/whatsapp.png" alt=""> 300 277 98 1</p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/github.png" alt=""><a class="pie"
+                    href="https://github.com/Omar2108">https://github.com/Omar2108</a></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

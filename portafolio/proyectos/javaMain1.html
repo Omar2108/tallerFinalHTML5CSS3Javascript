@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link href="https://www.flaticon.es/uicons">
+    <link rel="stylesheet" type="text/css" href="/portafolio/css/main.css">
+
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="tituloh">
+            <h1>Omar Rodriguez Chamorro</h1>
+            <h2>Desarrollador Full Stack</h2>
+        </div>
+        <div class="menu">
+            <nav>
+                <div class="btnMenu">
+                    <a href="./proyectos.html">Volver</a>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <article>
+        <section class="habilidades">
+            <h1>Taller Java Variables e Impresiones</h1>
+            <h2 class="hab1">Clase Main</h2>
+            <h2 class="hab1">Enunciado</h2>
+            <div class="enun">
+                <p class="parra">El taller esta realizado en modo aplicacion, donde al usuario se le mostrara por pantalla un menu de opcion del punto del taller que desee que se ejecute. Desarrollado atraves de la programacion orientada a objeto, donde la aplicacion se ejecuta a traves de un archivo principal, donde se llaman las demas clases que contienen la solucion del cada punto del taller.</p>              
+            </div>
+            <h3>Codigo de la Clase principal </h3>
+            <div class="codigo">
+                <pre>
+                    <code>
+                        import java.io.IOException;
+                        import java.util.Scanner;
+
+                        public class main {
+                            
+                            private static boolean control = true;
+                            private static int opcion;
+                            
+                            public static void main(String[] args) throws IOException{
+                                do{
+                                    limpiarPantalla();
+                                    menu();
+                                    opcion = capturar();
+                                    control = evaluarOpcion(opcion);
+                                }while(control==true);      
+                            }   
+                            
+                            private static void menu(){
+                                System.out.println("Escoja un punto del taller 1 que desee que se ejecute");
+                                System.out.println("1. Punto #1");
+                                System.out.println("2. Punto #2");
+                                System.out.println("3. Punto #3");
+                                System.out.println("4. Punto #4");
+                                System.out.println("5. Punto #5");
+                                System.out.println("0. Salir del taller");
+                            }
+                            
+                            private static int capturar(){
+                                Scanner entrada = new Scanner(System.in);
+                                return entrada.nextInt();
+                            }
+                            
+                            private static boolean evaluarOpcion(int opcion1) throws IOException{
+                                
+                                switch(opcion){
+                                    case 1 -> {
+                                        Punto1 p1;
+                                        p1 = new Punto1();
+                                        p1.Punto1();
+                                        return true;
+                                    }
+                                    case 2 -> {
+                                        Punto2 p2;
+                                        p2 = new Punto2();
+                                        Punto2.Punto2();
+                                        return true;
+                                    }  
+                        
+                                    case 3 -> {
+                                        Punto3 p3;
+                                        p3 = new Punto3();
+                                        Punto3.Punto3();
+                                        return true;
+                                    }  
+                                    case 4 -> {
+                                        Punto4 p4; 
+                                        p4 = new Punto4();
+                                        Punto4.Punto4();
+                                        return true;
+                                    }  
+                                    case 5 -> {
+                                        Punto5 p5;
+                                        p5 = new Punto5();
+                                        Punto5.Punto5();
+                                        return true;
+                                    }
+                                    case 0 ->{
+                                        boolean control;
+                                        control = false;
+                                    }
+                                    default -> {
+                                        System.out.println("Opción incorrecta");
+                                        System.in.read();            
+                                    }
+                                }
+                                return false;
+                            
+                                
+                            }
+                        private static void limpiarPantalla() {
+                                System.out.print("\033[H\033[2J");
+                                System.out.flush();
+                            }   
+                        }
+
+
+                    </code>
+                </pre>
+            </div>
+            
+        </section>
+    </article>
+    <div class="piePagina">
+        <footer>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/correo.png" alt="">
+                omar.rodriguez2108@hotmail.com</p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/correo.png" alt=""> omar.rchamorro21@gmail.com
+            </p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/telefono-inteligente.png" alt=""> 300 277 98 1
+            </p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/whatsapp.png" alt=""> 300 277 98 1</p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/github.png" alt=""><a class="pie"
+                    href="https://github.com/Omar2108">https://github.com/Omar2108</a></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

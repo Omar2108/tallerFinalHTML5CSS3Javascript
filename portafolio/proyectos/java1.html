@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link href="https://www.flaticon.es/uicons">
+    <link rel="stylesheet" type="text/css" href="/portafolio/css/main.css">
+
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="tituloh">
+            <h1>Omar Rodriguez Chamorro</h1>
+            <h2>Desarrollador Full Stack</h2>
+        </div>
+        <div class="menu">
+            <nav>
+                <div class="btnMenu">
+                    <a href="./proyectos.html">Volver</a>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <article>
+        <section class="habilidades">
+            <h1>Taller Java Variables e Impresiones</h1>
+            <h2 class="hab1">Punto 1</h2>
+            <h2 class="hab1">Enunciado del ejercicio</h2>
+            <div class="enun">
+                <p class="parra">Realice un programa el cual solicita su nombre y apellidos.</p>              
+            </div>
+            <h3>Codigo de la Clase</h3>
+            <div class="codigo">
+                <pre>
+                    <code>
+                        import java.util.Scanner;
+
+                        class Punto1 {
+                            
+                        private String nombre;
+                        private String apellidos;
+                        
+                        public void Punto1 (){
+                            solicitarNombre();
+                            nombre = capturarDato();
+                            
+                            solicitarApellidos();
+                            apellidos = capturarDato();
+                            
+                        }
+                        
+                        private void solicitarNombre (){
+                            System.out.println("Ingrese su nombre");
+                        }
+                        
+                        private void solicitarApellidos (){
+                            System.out.println("Ingrese sus apellidos");
+                        }
+                        
+                        private String capturarDato (){
+                            Scanner input = new Scanner(System.in);
+                            return input.nextLine();
+                        }
+
+                        }
+
+                    </code>
+                </pre>
+            </div>
+            
+        </section>
+    </article>
+    <div class="piePagina">
+        <footer>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/correo.png" alt="">
+                omar.rodriguez2108@hotmail.com</p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/correo.png" alt=""> omar.rchamorro21@gmail.com
+            </p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/telefono-inteligente.png" alt=""> 300 277 98 1
+            </p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/whatsapp.png" alt=""> 300 277 98 1</p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/github.png" alt=""><a class="pie"
+                    href="https://github.com/Omar2108">https://github.com/Omar2108</a></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

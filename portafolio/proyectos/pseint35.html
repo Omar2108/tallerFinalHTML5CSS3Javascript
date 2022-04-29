@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link href="https://www.flaticon.es/uicons">
+    <link rel="stylesheet" type="text/css" href="/portafolio/css/main.css">
+
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="tituloh">
+            <h1>Omar Rodriguez Chamorro</h1>
+            <h2>Desarrollador Full Stack</h2>
+        </div>
+        <div class="menu">
+            <nav>
+                <div class="btnMenu">
+                    <a href="./proyectos.html">Volver</a>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <article>
+        <section class="habilidades">
+            <h1>Taller PSeInt Funciones</h1>
+            <h2 class="hab1">Punto 7</h2>
+            <h2 class="hab1">Enunciado del ejercicio</h2>
+            <div class="enun">
+                <p class="parra">La Secretaría de Salud Municipal requiere de una aplicación que le permita calcular el IMC (Índice de masa corporal) y requiere los datos peso en kilogramos y estatura en metros Para cada persona encuestada adicional a los datos suministrados, debe mostrar el resultado para cada uno y establecer en qué rango se encuentra (bajo peso, normal, sobrepeso y obeso).</p>
+                              
+            </div>
+            <h3>Solucion: </h3>
+            <div class="codigo">
+                <pre>
+                    <code>
+                        SubProceso estatura <- solicitarEstatura ( )
+                            Definir estatura Como real;
+                            Escribir "Ingrese su estatura en metros";
+                            Leer estatura;
+                            
+                        FinSubProceso
+
+                        SubProceso peso <- solicitarPeso ( )
+                            Definir peso Como Entero;
+                            
+                            Escribir "Ingrese su peso en kilogramos";
+                            Leer peso;
+                            
+                        FinSubProceso
+
+                        SubProceso calcular <- calcularIMC (peso, estatura)
+                            Definir imc Como Real;
+                            imc <- peso/estatura ^ 2;
+                            
+                        FinSubProceso
+
+                        Proceso funcion7
+                            Definir imc Como Real;
+                            Definir estatura Como Real;
+                            Definir peso Como Entero;
+                            
+                            peso <- solicitarPeso();
+                            estatura <- solicitarEstatura();
+                            imc <- calcularIMC(peso, estatura);
+                            
+                            Si imc <= 18.5 Entonces
+                                Escribir "Usted se encuentra bajo peso ";
+                            FinSi
+                            
+                            Si imc >18.5 Y imc < 24.9 Entonces
+                                Escribir "Usted se encuentra en peso normal ";
+                            FinSi
+                            
+                            Si imc > 24.9 Y imc < 29.9 Entonces
+                                Escribir "Usted se encuentra en sobrepeso";
+                                
+                            FinSi	
+                            
+                            Si imc > 29.9 Entonces
+                                Escribir "Usted se encuentra en obesidad";
+                            FinSi
+                            
+                        FinProceso
+
+
+                    </code>
+                </pre>
+            </div>
+            
+        </section>
+    </article>
+    <div class="piePagina">
+        <footer>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/correo.png" alt="">
+                omar.rodriguez2108@hotmail.com</p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/correo.png" alt=""> omar.rchamorro21@gmail.com
+            </p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/telefono-inteligente.png" alt=""> 300 277 98 1
+            </p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/whatsapp.png" alt=""> 300 277 98 1</p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/github.png" alt=""><a class="pie"
+                    href="https://github.com/Omar2108">https://github.com/Omar2108</a></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link href="https://www.flaticon.es/uicons">
+    <link rel="stylesheet" type="text/css" href="/portafolio/css/main.css">
+
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="tituloh">
+            <h1>Omar Rodriguez Chamorro</h1>
+            <h2>Desarrollador Full Stack</h2>
+        </div>
+        <div class="menu">
+            <nav>
+                <div class="btnMenu">
+                    <a href="./proyectos.html">Volver</a>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <article>
+        <section class="habilidades">
+            <h1>Taller Java Condicionales</h1>
+            <h2 class="hab1">Punto 3</h2>
+            <h2 class="hab1">Enunciado del ejercicio</h2>
+            <div class="enun">
+                <p class="parra">Realizar un programa en el cual se solicite el nombre, apellidos y edad de la persona. Si la persona es mayor o igual a 18 años, entonce se deberá imprimir en pantalla [Nombre completo] usted es mayor de edad, por lo tanto puede entrar a la fiesta. Si la edad de la persona es menor que 18 años, entonces, deberá imprimirse el siguiente mensaje: [Nombre completo] usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa.</p>              
+            </div>
+            <h3>Codigo de la Clase</h3>
+            <div class="codigo">
+                <pre>
+                    <code>
+                        package com.tallerjava.taller2;
+
+                        import java.util.Scanner;
+
+
+                        public class punto3 {
+                            
+                            private String nombres;
+                            private String apellidos;
+                            private int edad;
+                            
+                            
+                            public static void punto3 (){
+                                solicitarNombres();
+                            String nombres;
+                            nombres = capturarNombre();
+                            
+                            solicitarApellidos();
+                            String apellidos;
+                            apellidos = capturarApellidos();
+                            
+                            solicitarEdad();
+                            int edad;
+                            edad = capturarEdad();
+                            
+                            if(edad >= 18){
+                                System.out.println(nombres+" "+apellidos+" usted es mayor de edad, por lo tanto puede entrar a la fiesta.");
+                            }else{
+                                System.out.println(nombres+" "+apellidos+" usted es menor de edad, por lo tanto, no puede entrar a la fiesta,
+                                por favor devuélvase a su casa.");
+                            }
+                            
+                            }
+                            
+                            private static void solicitarNombres(){
+                                System.out.println("Ingrese su nombre");
+                            }
+                            private static void solicitarApellidos(){
+                                System.out.println("Ingrese sus apellidos");
+                            
+                            }
+                            
+                            private static void solicitarEdad(){
+                                System.out.println("Ingrese su edad");
+                            }
+                            
+                            private static String capturarNombre(){
+                                Scanner input = new Scanner(System.in);
+                                return input.nextLine();
+                            }
+                            
+                            private static String capturarApellidos(){
+                                Scanner input = new Scanner(System.in);
+                                return input.nextLine();
+                            }
+                            
+                            private static int capturarEdad(){
+                                Scanner input = new Scanner(System.in);
+                                return input.nextInt();
+                            }
+                            
+                        }
+                    </code>
+                </pre>
+            </div>
+            
+        </section>
+    </article>
+    <div class="piePagina">
+        <footer>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/correo.png" alt="">
+                omar.rodriguez2108@hotmail.com</p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/correo.png" alt=""> omar.rchamorro21@gmail.com
+            </p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/telefono-inteligente.png" alt=""> 300 277 98 1
+            </p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/whatsapp.png" alt=""> 300 277 98 1</p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/github.png" alt=""><a class="pie"
+                    href="https://github.com/Omar2108">https://github.com/Omar2108</a></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

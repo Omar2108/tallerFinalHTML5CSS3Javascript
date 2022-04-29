@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/portafolio/css/main.css">
+    <script type="text/javascript" src="/portafolio/js/main.js" ></script>
+    <title>Hoja de vida</title>
+</head>
+
+<body>
+    <header>
+        <h1><img src="/portafolio/img/foto.jpeg">Hoja de Vida</h1>
+        <select id="cambio" onchange="cambiar()">
+            <option value="#f4f6f5">Tema 1</option>
+            <option value="#40df82">Tema 2</option>
+            <option value="#087bcd">Tema 3</option>
+            <option value="#cd0808">Tema 4</option>
+        </select>
+
+    </header>
+
+    <main>
+
+        <div>
+            <b>
+                <h2 class="subtitulo">
+                    Estudios Realizados
+                </h2>
+            </b>
+        </div>
+        <section>
+            <div>
+                <a onclick="mostrar()" id="mostrar">ESTUDIO 1</a>
+                <ul class="contenido" id="ocultar">
+                    <a onclick="ocultar()">Ocultar Contenido</a><br>
+                    <li>
+                        <label>
+                            Formacion:
+                        </label>
+                        <p>
+                            Tecnolgias en analisis y desarrollo de sistemas de informacion
+                        </p>
+                    </li>
+                    <li>
+                        <label>
+                            Institucion:
+                        </label>
+                        <p>
+                            SENA
+                        </p>
+                    </li>
+                    <li>
+                        <label>
+                            Ciudad:
+                        </label>
+                        <p>
+                            Barranquella
+                        </p>
+                    </li>
+                    <li>
+                        <label>
+                            Fecha de inicio:
+                        </label>
+                        <p>
+                            20/08/2020
+                        </p>
+                    </li>
+                    <li>
+                        <label>
+                            Fecha de finalizacion:
+                        </label>
+                        <p>
+                            20/08/2022
+                        </p>
+                    </li>
+                    
+                </ul>
+                    
+            </div>
+        </section>
+        <section>
+
+            <div>
+                <a onclick="mostrar()" >ESTUDIO 2</a>
+                <ul class="contenido" id="ocultar">
+                    <a onclick="ocultar()">Ocultar Contenido</a><br>
+                    <li>
+                        <label>
+                            Formacion:
+                        </label>
+                        <p>
+                            Cultura y calidad de software
+                        </p>
+                    </li>
+                    <li>
+                        <label>
+                            Institucion:
+                        </label>
+                        <p>
+                            University Everis
+                        </p>
+                    </li>
+                    <li>
+                        <label>
+                            Ciudad:
+                        </label>
+                        <p>
+                            Barranquella
+                        </p>
+                    </li>
+                    <li>
+                        <label>
+                            Fecha de inicio:
+                        </label>
+                        <p>
+                            02/02/2021
+                        </p>
+                    </li>
+                    <li>
+                        <label>
+                            Fecha de finalizacion:
+                        </label>
+                        <p>
+                            02/03/2021
+                        </p>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+        <div class="contenedorBtn">
+            <div class="btn"><a  href="./experiencias.html">Siguiente pagina</a></div>
+            <div class="btn"><a href="./principal.html">Volver</a></div>
+            
+        </div>
+    </main>
+</body>
+
+</html>

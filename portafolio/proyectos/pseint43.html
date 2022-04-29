@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link href="https://www.flaticon.es/uicons">
+    <link rel="stylesheet" type="text/css" href="/portafolio/css/main.css">
+
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="tituloh">
+            <h1>Omar Rodriguez Chamorro</h1>
+            <h2>Desarrollador Full Stack</h2>
+        </div>
+        <div class="menu">
+            <nav>
+                <div class="btnMenu">
+                    <a href="./proyectos.html">Volver</a>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <article>
+        <section class="habilidades">
+            <h1>Taller PSeInt Funciones</h1>
+            <h2 class="hab1">Punto 16</h2>
+            <h2 class="hab1">Enunciado del ejercicio</h2>
+            <div class="enun">
+                <p class="parra">Imprimir los números primos del 1 al 1000, el resultado debe ser buscado de forma matemática.</p>
+                              
+            </div>
+            <h3>Solucion: </h3>
+            <div class="codigo">
+                <pre>
+                    <code>
+                        SubProceso primos <- numPrimos ( )
+                            Definir num, contador, indice Como Entero;
+                            Para num<-1 Hasta 1000 Con Paso 1 Hacer
+                                indice<-1;
+                                contador<-0;
+                                Mientras indice<=num Hacer
+                                    Si num MOD indice = 0 Entonces
+                                        contador <- contador + 1;
+                                    FinSi
+                                    indice<-indice + 1;
+                                FinMientras
+                                Si contador = 2 Entonces
+                                    Escribir "El numero ", num, " es primo";
+                                FinSi
+                                
+                            FinPara
+                            
+                            
+                        FinSubProceso
+
+                        Proceso funcion16
+                            Definir primos Como Entero;
+                            primos <- numPrimos();
+                            
+                            
+                        FinProceso
+
+
+                    </code>
+                </pre>
+            </div>
+            
+        </section>
+    </article>
+    <div class="piePagina">
+        <footer>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/correo.png" alt="">
+                omar.rodriguez2108@hotmail.com</p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/correo.png" alt=""> omar.rchamorro21@gmail.com
+            </p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/telefono-inteligente.png" alt=""> 300 277 98 1
+            </p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/whatsapp.png" alt=""> 300 277 98 1</p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/github.png" alt=""><a class="pie"
+                    href="https://github.com/Omar2108">https://github.com/Omar2108</a></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

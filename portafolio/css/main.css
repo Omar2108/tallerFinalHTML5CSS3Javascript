@@ -1,0 +1,258 @@
+.encabezado{
+   width: 100%;
+   margin: 10px;
+   padding: auto;
+   background: black;
+   color: white;
+   overflow: hidden;
+}  
+.tituloh{
+   text-align: center;
+   font-family: cursive;
+} 
+
+.menu{
+   margin: 4px;
+   color: white;
+   justify-content: flex-end;
+   
+   
+}
+
+.btnMenu{
+   width: 140px;
+   height: 30px;
+   color: white;
+   background: #41aaf0;
+   border-radius: 10px;
+   display: inline-block;
+   float: right;
+}
+
+.contenedor{
+   margin: 10px;
+   padding: auto;
+   width: auto;
+   height: 1700px;
+}
+
+header{
+      width: 1024px;
+      margin:10px auto;
+      padding: 10px;
+      background: #7ebbe3;
+      height: 180px;
+   }
+   
+main{
+      padding: 4px;
+      background: #cbe9d8;
+      width: 1024px;
+      margin:0px auto;
+}
+   
+section{
+      margin: 10px;
+      padding: 4px;
+      background: #41aaf0;
+}
+   
+h1{
+   font-size: 30px;
+   font-family: Engravers MT;
+   text-align: center;
+      
+   
+}
+   
+h2{
+   font-size: 20px;
+   font-family: Engravers MT;
+}
+   
+.subtitlo{
+   width: 100%;
+   margin: 0px auto;
+   text-align: center;
+}
+   
+div{
+   width: 100%;
+   margin: 10px;
+   
+     
+   
+}
+   
+   
+a{
+   font-size: 20px;
+   font-family: Engravers MT;
+   font-weight: bold;  
+       
+}
+   
+img{
+   width: 200px;
+   height: 120px;
+   border-radius: 10px;
+   align-content: center;
+      
+   
+}
+   
+   .img{
+      width: 200px;
+      padding: 1px;
+      margin: 0px auto;
+      justify-content: center;
+   
+   }
+   
+   label{
+      font-size: 15px;
+      font-family: Engravers MT;
+      font-weight: bold;
+   }
+   
+   p{
+      font-size: 15px;
+      font-family: Engravers MT;
+   }
+   
+   .btn{
+      width: 200px;
+      height: 30px;
+      border-radius: 10px;
+     box-shadow: 2px 7px 5px gray;
+     margin: 10px;
+     box-shadow: 0 0 9px black;
+     background: blue;
+     
+   }
+
+   .btnMenu:hover{
+      background: red;
+     cursor: pointer;
+
+   }
+
+   .btn:hover{
+      background: red;
+      cursor: pointer;
+   }
+   
+   a{
+      font-size: 20px;
+      font-family: sans-serif;
+      text-decoration: none;
+      margin: 10px;
+      color: black;
+   
+   }
+   
+  
+   
+   .contenido{
+      display: none;
+   }
+
+   .contenedorBtn{
+      width: 100%;
+      height: 80px;
+   }
+   .piePagina{
+      border: #41aaf0 solid 1px;
+      width: 100%;
+      background: white;
+      color: black;
+      height: 60px;
+      overflow: hidden;
+      border-radius: 10px;     
+      background: #41aaf0;
+   }
+   .imgCorreo{
+      width: 20px;
+      height: 30px;
+      display: inline-block;
+   }
+
+   .perfil{
+      width: 100%;
+   }
+
+   .habilidades{
+      width: 100%;
+   }
+   .pie{
+      font-size: 15px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      display: inline-block;
+      margin: 4px;
+   }
+
+   .parra{
+      font-size: 20px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+   
+   .lista{
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 16px;
+   }
+
+   .puntos{
+      font-size: 15px;
+   }
+
+   .codigo{
+      margin: 10px;
+      padding: 4px;
+      border: 2px solid red;
+      border-radius: 10px;
+      width: 90%;
+      height: auto;
+   }
+
+   .hab1{
+      font-size: 20px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+
+   .enun{
+      width: 90%;
+      height: auto;
+      border: solid 2px red;
+      border-radius: 10px;
+      padding: 2px;
+   }
+
+   .video{
+      width: 600px;
+      height: auto;
+      border: solid 2px red;
+      border-radius: 10px;
+   }
+
+.figura{
+   width: 140px;
+   height: 200px;
+}
+
+.tabla{
+   width: 600px;
+   height: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

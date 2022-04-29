@@ -1,0 +1,51 @@
+body{
+	width: 800px;
+	margin: 0px auto;
+	padding: 0px;
+	background-image: rgb(46, 71, 183);
+}
+
+header{
+	text-align: center;
+	margin: 10px;
+	width: 800px;
+	height: 70px;
+	border: solid 1px rgb(0, 0, 255);
+}
+
+main{
+	width: 800px;
+	height: 600px;
+	margin: 10px;
+	border: solid 1px rgb(0, 34, 255);
+}
+
+h1{
+	font-family: Bernard MT Condensed;
+}
+
+.frutas{
+	margin: 10px;
+	padding: 10px;
+
+}
+
+ol{
+	margin: 10px;
+	padding: 10px;
+}
+
+li{
+	margin: 10px;
+	font-size: 20px;
+
+}
+
+.par{
+	background: #f00c0c;
+}
+
+.impar{
+	background: #37e806;
+}
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link href="https://www.flaticon.es/uicons">
+    <link rel="stylesheet" type="text/css" href="/portafolio/css/main.css">
+
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="tituloh">
+            <h1>Omar Rodriguez Chamorro</h1>
+            <h2>Desarrollador Full Stack</h2>
+        </div>
+        <div class="menu">
+            <nav>
+                <div class="btnMenu">
+                    <a href="./proyectos.html">Volver</a>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <article>
+        <section class="habilidades">
+            <h1>Taller PSeInt Arreglos y Matrices</h1>
+            <h2 class="hab1">Punto 2</h2>
+            <h2 class="hab1">Enunciado del ejercicio</h2>
+            <div class="enun">
+                <p class="parra">Crear un arreglo de números enteros de 20 posiciones, el cual, debe ser llenado con números aleatorios entre 1 y 100; después de haber llenado dicho arreglo, se debe volver a recorrer utilizando un ciclo diferente al que se usó para llenarse e imprimir los números pares e impares. Ejemplo</p>
+                <p class="parra">o	Números pares: 2, 4, 6, 8, 10</p>
+                <p class="parra">o	Números impares: 1, 3, 5, 7, 9</p>             
+            </div>
+            <h3>Solucion: </h3>
+            <div class="codigo">
+                <pre>
+                    <code>
+                        Proceso arreglos
+                            Definir indice Como Entero;
+                            Definir numerosAleatorios Como Entero;
+                            Definir arreglo Como Entero;
+                            Dimension arreglo[20];
+                            
+                            Para indice<-0 Hasta 19 Con Paso 1 Hacer
+                                numerosAleatorios<-azar(100);
+                                arreglo[indice]<-numerosAleatorios;
+                            FinPara
+                            
+                            Para indice<-0 Hasta 19 Con Paso 1 Hacer
+                                
+                                Si (arreglo[indice] MOD 2) = 0 Entonces
+                                    Escribir "Números pares: ", arreglo[indice];
+                                SiNo
+                                    Escribir "Números impares: ", arreglo[indice];;
+                                FinSi
+                            
+                            FinPara
+                                
+                        FinProceso
+
+                    </code>
+                </pre>
+            </div>
+            
+        </section>
+    </article>
+    <div class="piePagina">
+        <footer>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/correo.png" alt="">
+                omar.rodriguez2108@hotmail.com</p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/correo.png" alt=""> omar.rchamorro21@gmail.com
+            </p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/telefono-inteligente.png" alt=""> 300 277 98 1
+            </p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/whatsapp.png" alt=""> 300 277 98 1</p>
+            <p class="pie"><img class="imgCorreo" src="/portafolio/img/github.png" alt=""><a class="pie"
+                    href="https://github.com/Omar2108">https://github.com/Omar2108</a></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
